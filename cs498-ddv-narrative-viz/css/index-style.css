@@ -1,0 +1,149 @@
+body, html {
+    height: 100%;
+    font: 12px Helvetica;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.row{
+    padding: 5px;
+    margin: 10px;
+}
+.card{
+    opacity: .4;
+    box-shadow: 5px 5px;
+}
+
+.col-md-2{
+    margin-left: 30px;
+}
+.button{
+
+    height : 80px;
+    width : 80px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 9px #999;
+}
+
+.button:active {
+
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.bg-image {
+    /* The image used */
+   background-image: url("../data/ipl.png");
+    height : 150px;
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.focus circle {
+    fill: steelblue;
+}
+
+.tooltip {
+
+    padding: 4px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: absolute;
+    background-color: white;
+    font-size: 14px;
+    pointer-events: none;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.tooltip div {
+    margin: 3px 0;
+
+}
+
+.tooltip-team, .tooltip-win {
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.annotation circle {
+    fill: none;
+    stroke: darkslategrey;
+}
+
+.annotation path {
+    fill: none;
+    stroke: darkslategrey;
+    shape-rendering: crispEdges;
+}
+
+.annotation text {
+    text-shadow: -2px 0 2px #fff,
+    0 2px 2px #fff,
+    2px 0 2px #fff,
+    0 -2px 2px #fff;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    font-size: 30px;
+}
